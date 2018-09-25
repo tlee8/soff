@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Occupations</h1>
+  <h3>Here are the occupations in the US with the percentage of the workforce it comprises.<br></h3>
+    <table>
+      <tr>
+        <td><b>Occupations</b></td>
+        <td><b>Percentage</b></td>
+	<td><b>Links</b></td>
+      </tr>
+      {% for occupation in collection %}
+      <tr>
+        <td>{{occupation}}</td>
+        <td>{{collection[occupation]}}</td>
+	<td>{{links[occupation]}}</td>
+      </tr>
+      {% endfor %}
+    <table>
+  <h3>We've randomly selected an occupation weighted by the percentage given.
+      Your randomly selected occupation is: </h3>{{randomOccupation}}
+  <h3>Jumpstart your career with this link: </h3><a href={{occupationLink}}>{{occupationLink}}</a>
+      <br><br>
+  <a href='/'>home</a>
+</body>
+</html>
