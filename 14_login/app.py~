@@ -1,0 +1,19 @@
+from flask import Flask, render_template, session
+import os
+app = Flask(__name__)
+
+@app.route("/")
+def login():
+    return render_template('login.html')
+
+@app.route("/auth")
+def logged():
+    return ("good")
+    '''if :
+        return render_template('good.html')
+    else:
+        return render_template('bad.html')
+        '''
+if __name__== "__main__":
+    app.debug = True
+    app.run()
