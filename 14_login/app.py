@@ -2,7 +2,7 @@
 #SoftDev1 pd6
 #K14 -- Do I Know You?
 #2018-10-01
-from flask import Flask, render_template, request, session, url_for, redirect
+from flask import Flask, render_template, request, session, url_for, redirect,flash
 import os
 
 app = Flask(__name__)
@@ -26,7 +26,10 @@ def logged():
         session['username'] = request.args['username']                             #you get to join the super secret club
         return render_template('welcome.html', username= request.args['username'])
     else:
-        return render_template('error.html')                                       #otherwise you get kicked out
+        flash ('invalid login')
+        return redirect(url_for("login")) 
+       # return render_template('error.html')
+       #otherwise you get kicked out
 
 @app.route("/exit")
 def leave():

@@ -18,5 +18,10 @@ K14 -- Do I Know You?
       <input type="password" name="password" placeholder="Password">    <!-- normal login form stuff, carry on -->
       <input type="submit" value="Login">
     </form>
+    {% set msgs = get_flashed_messages() %}
+    {% for each in msgs %}
+    {{each}}
+    <br>
+    {% endfor %}
   </body>
 </html>
