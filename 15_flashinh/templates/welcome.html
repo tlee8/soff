@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<!--
+Mohammed A Lee - Mohammed Uddin and Thomas Lee
+SoftDev1 pd6
+K14 -- Oh yes, perhaps I do…
+2018-10-02
+  -->
+
+<html>
+  <head>
+    {% extends "base.html" %}
+    {% block head %}
+    <title>Welcome</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% block content %}
+    <p> Welcome {{username}} </p>     <!-- hello there user -->
+    <form action="/exit">
+      <input type="submit" value= "Logout">  <!-- a logout button because you're not ready to join us -->
+    </form>
+    {% endblock %}
+  </body>
+</html>

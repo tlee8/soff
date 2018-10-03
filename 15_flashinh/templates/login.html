@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<!--
+Mohammed A Lee - Mohammed Uddin and Thomas Lee
+SoftDev1 pd6
+K14 -- Oh yes, perhaps I do…
+2018-10-02
+-->
+
+
+<html>
+  <head>
+    {% extends "base.html" %}
+    {% block head %}
+    <title>Login</title>
+    {% endblock %}
+  </head>
+  <body>
+    {% block content %}
+    <form action="/auth">
+      <input type="text" name="username" placeholder="Username">
+      <input type="password" name="password" placeholder="Password">    <!-- normal login form stuff, carry on -->
+      <input type="submit" value="Login">
+    </form>
+    {% set msgs = get_flashed_messages() %}
+    {% for each in msgs %}
+    {{each}}
+    <br>
+    {% endfor %}
+    {% endblock %}
+  </body>
+</html>
