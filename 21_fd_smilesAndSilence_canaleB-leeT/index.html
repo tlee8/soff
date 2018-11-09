@@ -1,3 +1,10 @@
+<!--
+SmilesAndSilence -- Britni Canale && Thomas Lee
+SoftDev1 pd06
+K20 -- Comic Sans Syndrome
+2018-11-05
+-->
+
 <!DOCTYPE>
 <html>
 
@@ -6,26 +13,26 @@
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/css/foundation.css">
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/vendor/jquery.min.js"></script>
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/foundation/6.0.1/js/foundation.min.js"></script>
-    
+
   </head>
 
 
   <body>
      <div class = "column">
 
-        <div class = "small-12 columns">
+        <div class = "small-12 columns" style ="text-align:center">
           <h1>Intro to Foundation</h1>
+          <hr>
         </div>
 
-        <div class="small-12 columns">
 
            <div class = "column">
 
-              <div class="small-12 medium-3 large-3 columns">
+              <div class="small-12 medium-3 large-3 columns">               <!--MENUS -->
                 <div class ="show-for-medium" style="background-color:#EEEEEE">
                   <ul class="vertical menu drilldown" data-drilldown>
                     <li><a href="#">Block Quotes</a></li>
-                    <li><a href="#">Sliders</a></li>
+                    <li><a href="#">Buttons</a></li>
                     <li><a href="#">Switches</a></li>
                     <li><a href="#">Grids</a></li>
                   </ul>
@@ -34,101 +41,114 @@
                   <div class="top-bar">
                     <ul class="dropdown menu" data-dropdown-menu>
                       <li><a href="#">Block Quotes</a></li>
-                      <li><a href="#">Sliders</a></li>
+                      <li><a href="#">Buttons</a></li>
                       <li><a href="#">Switches</a></li>
                       <li><a href="#">Grids</a></li>
                     </ul>
                   </div>
                 </div>
-                </div>
-              <div class="small-12 medium-9 large-9 columns">
-		<h2> Block Quotes </h2>
-		<p> <blockquote> This is a block quote  <cite> thomas lee </cite></blockquote></p>
-		<p> <blockquote> I like dogs <cite> britni canale </cite></blockquote></p>
               </div>
 
-	      <div class ="small-12 medium-9 large-9 columns">
-		<h2> Sliders </h2>
-		<p> This is a slider </p>
-	      </div>
-	      <div class="small-9 medium-10 large-11 columns">
-		 <div class = "slider" data-slider data-initial-start = "50" data-end = "100">		  
-		   <span class = "slider-handle"  data-slider-handle role = "slider" tabindex = "1" aria-controls = "sliderOutput"></span> 
-		   <span class = "slider-fill" data-slider-fill></span>
-		 </div>
-	       </div>
-	       
-	       <div class = "small-3 medium-2 large-1 columns">
-		 <input type = "number" id = "sliderOutput">
-	       </div>
 
-	       <script>
-		 $(document).ready(function() {
-		 $(document).foundation();
-		 })
-	       </script>
+                <div class="small-12 medium-9 large-9 columns">
+		                <h2> Block Quotes </h2>
+		                <p> <blockquote> This is a block quote  <cite> thomas lee </cite></blockquote></p>
+		                <p> <blockquote> I like dogs <cite> britni canale </cite></blockquote></p>
+                </div>
+              </div>
+
+                <div class = "column">
+	             <div class ="small-12 columns">
+		               <h2> Buttons </h2>
+		               <p> These are buttons </p>
+	             </div>
+	             <div class="small-12 medium-12 large-12 columns">
+		               <button type = "button" class = "button">This is a button button</button>
+		               <button type = "button" class = "success button">This is a success button</button>
+			       <button type = "button" class = "alert button">This is an alert button</button>
+			       <button type = "button" class = "tiny disabled button">This is a tiny disabled button</button>
+			       <button type = "button" class = "small hollow button">This is a small hollow button</button>
+			       <button class = "large alert dropdown button">This is a large alert dropdown button</button>
+			       <button type = "button" class = "large hollow secondary button">This is a large hollow secondary button</button>
+			       <button type = "button" class = "large success button">This is a large success button</button>
+			       <button type = "button" class = "expanded warning button">This is an expanded warning button</button>
+			       <button type = "button" class = "large expanded secondary button">This is a large expanded secondary button</button>
+			       <button class = "small expanded dropdown button">This is a small expanded dropdown button</button>
+
+			       <div class = "button-group">
+				 <a class = "button">Group Button 1</a>
+				 <a class = "success button">Group Button 2</a>
+				 <a class = "alert button">Group Button 3</a>
+				 <a class = "warning button">Group Button 4</a>
+				 <a class = "secondary button">Group Button 5</a>
+				 <a class = "dropdown button">Group Button 6</a>
+				 <a class = "success dropdown button">Group Button 7</a>
+				 <a class = "warning dropdown button">Group Button 8</a>
+				 <a class = "alert dropdown button">Group Button 9</a>
+
+			       </div>
+	            </div>
+
+		    
+		     
+	           <div class = "small-12 columns">
+		             <h2> Switches </h2>
+		             <p> These are switches </p>
+	          </div>
+	          <div class="small-12 columns">
+		            <div class = "switch tiny">
+		                <input class = "switch-input" id = "exampleRadioSwitch1" type = "radio" checked name = "testGroup">
+		                <label class = "switch-paddle" for = "exampleRadioSwitch1">
+		                    <span class = "show-for-sr">Radio Switch 1</span>
+		                </label>
+		           </div>
+
+		           <div class = "switch small">
+		               <input class = "switch-input" id = "exampleRadioSwitch2" type = "radio" checked name = "testGroup">
+		               <label class = "switch-paddle" for = "exampleRadioSwitch2">
+		                   <span class = "show-for-sr">Radio Switch 2</span>
+		               </label>
+		          </div>
+
+        		 <div class = "switch large">
+        		   <input class = "switch-input" id = "exampleRadioSwitch3" type = "radio" checked name = "testGroup">
+        		   <label class = "switch-paddle" for = "exampleRadioSwitch3">
+        		     <span class = "show-for-sr">Radio Switch 3</span>
+        		   </label>
+        		 </div>
+
+        		 <p>Was this helpful?</p>
+        		 <div class = "switch">
+        		   <input class = "switch-input" id = "inner_label" type = "checkbox"  name = "help">
+        		   <label class = "switch-paddle" for = "inner_label">
+        		     <span class = "show-for-sr">Was this helpful?</span>
+        		     <span class = "switch-active" aria-hidden = "true">Yes</span>
+        		     <span class = "switch-inactive" aria-hidden = "true">No</span>
+        		   </label>
+        		 </div>
+	       </div>
 
 	       <div class = "small-12 columns">
-		 <h2> Switches </h2>
-		 <p> These are switches </p>
-	       </div>
-	       <div class="small-6 columns">
-		 <div class = "switch tiny">
-		   <input class = "switch-input" id = "exampleRadioSwitch1" type = "radio" checked name = "testGroup">
-		   <label class = "switch-paddle" for = "exampleRadioSwitch1">
-		     <span class = "show-for-sr">Radio Switch 1</span>
-		   </label>
-		 </div>
-         
-		 <div class = "switch small">
-		   <input class = "switch-input" id = "exampleRadioSwitch2" type = "radio" checked name = "testGroup">
-		   <label class = "switch-paddle" for = "exampleRadioSwitch2">
-		     <span class = "show-for-sr">Radio Switch 2</span>
-		   </label>
-		 </div>
-         
-		 <div class = "switch large">
-		   <input class = "switch-input" id = "exampleRadioSwitch3" type = "radio" checked name = "testGroup">
-		   <label class = "switch-paddle" for = "exampleRadioSwitch3">
-		     <span class = "show-for-sr">Radio Switch 3</span>
-		   </label>
-		 </div>
-
-		 <p>Was this helpful?</p>
-		 <div class = "switch">
-		   <input class = "switch-input" id = "inner_label" type = "checkbox"  name = "help">
-		   <label class = "switch-paddle" for = "inner_label">
-		     <span class = "show-for-sr">Was this helpful?</span>
-		     <span class = "switch-active" aria-hidden = "true">Yes</span>
-		     <span class = "switch-inactive" aria-hidden = "true">No</span>
-		   </label>
-		 </div>
-
-	       </div>
-
-	       <div class = "small-12 columns">
-		 <h2> Grids </h2>
-		 <p> Look at this grid! Change your screen size and see what happens!</p>
+		         <h2> Grids </h2>
+		          <p> Look at this grid! Change your screen size and see what happens!</p>
 	       </div>
 	       <div class = "column">
-		 <div class="medium-6 large-4 columns" style = "background-color:blue; color:white;">Column 1
-            
-		   <div class = "column">
-		     <div class="small-6 medium-6 large-6 columns" style = "background-color:red; color:black;">Sub 1
-		     </div>
+		         <div class="medium-6 large-4 columns" style = "background-color:blue; color:white;">Column 1
 
-		     <div class="small-6 medium-6 large-6 columns" style = "background-color:green;">Sub 2
-		     </div>
-		   </div>
+		             <div class = "column">
+		                 <div class="small-6 medium-6 large-6 columns" style = "background-color:red; color:black;">Sub 1
+		                 </div>
 
-		 </div>
+		                 <div class="small-6 medium-6 large-6 columns" style = "background-color:green;">Sub 2</div>
+                </div>
+            </div>
 
-		 <div class="medium-6 large-4 columns" style = "background-color:purple; color:white;">Column 2
-		   <div class = "column">
-		     <div class="medium-6 large-1 columns" style = "background-color:orange; color:black;">Sub 3
-		     </div>
-		   </div>
-		 </div>
+        		 <div class="medium-6 large-4 columns" style = "background-color:purple; color:white;">Column 2
+        		   <div class = "column">
+        		     <div class="medium-6 large-1 columns" style = "background-color:orange; color:black;">Sub 3
+        		     </div>
+        		   </div>
+        		 </div>
 
 		 <div class="medium-12 large-4 columns" style = "background-color:yellow;" >Column 3
 		 </div>
@@ -136,14 +156,11 @@
 	       </div>
 
 	   </div>
-	      
 
-           </div>
 
-        </div>
 
-        <div class = "small-12 columns">
-          this is a footer
+        <div class = "small-12 medium-12 large-12 columns">
+          <footer> Copyright &copy; SmilesAndSilence </footer>
         </div>
 
      </div>
@@ -155,15 +172,6 @@
     font-family:Comic Sans MS, cursive, sans-serif;
     margin: 0
   }
-  h1{
-    color: #8F857D;
-    padding:20px;
-    text-align:center;
-  }
-  nav{
-    padding: 20px;
-    background-color: FEC0AA;
-  }
   ul{
     list-style-type: none;
     padding:0px;
@@ -172,21 +180,9 @@
     color:white;
     text-decoration: none;
   }
-  article{
-    width:80%;
-    position: relative;
-    float:right;
-    padding:20px;
-    background-color:blue;
-  }
   footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     color: gray;
     text-align: right;
-    height: 50px;
-    margin-bottom: 0;
   }
 </style>
 </html>
