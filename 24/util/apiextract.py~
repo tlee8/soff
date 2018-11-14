@@ -1,7 +1,0 @@
-import urllib, json
-
-x = urllib.request("https://api.nasa.gov/planetary/apod?api_key=54FEbz3y1Hlprqa74pXDAQlA7mfqlrwCOlsTVK6D")
-
-w = json.loads(x)
-
-print (w)
