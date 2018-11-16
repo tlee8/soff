@@ -1,0 +1,30 @@
+<!--
+Thomas Lee
+SoftDev1 pd6
+K26 -- Getting More REST
+2018-11-15
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Number Picker </title>
+  </head>
+
+  <body>
+    <h1> RRREEESSSTTT </h1>
+    <a href = "/">I want to see a different API</a><br>
+    <p>Pick a Number Between 1 and 20:</p>
+    <form action="/ghibli">
+      <input type="text" name="numMovies" placeholder="input number of movies">
+    </form>
+    {% set msgs = get_flashed_messages() %}
+    {% for each in msgs %}
+    <br>
+    {{each}}
+    <br>
+    {% endfor %}
+  </body>
+</html>
+
+  
