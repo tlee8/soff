@@ -11,7 +11,7 @@ app = Flask(__name__)
 @app.route("/")
 def rest():
     url = "https://randomfox.ca/floof/"
-    s = urllib.request.urlopen(url)
+    s = urllib..urlopen(url)
     s = s.read()
     d = json.loads(s)
     return render_template("index.html", link = d['image'])
